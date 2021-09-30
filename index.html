@@ -12,10 +12,63 @@
 
 		<style>
 
+			@font-face {
+				font-family: 'PBS Sans';
+				font-weight: 300;
+				/* stylelint-disable */
+				src: url('https://www-tc.pbs.org/pbsfonts/v1.2/PBSSans-Light.woff2')
+						format('woff2'),
+					url('https://www-tc.pbs.org/pbsfonts/v1.2/PBSSans-Light.woff')
+						format('woff');
+				/* stylelint-enable */
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: 'PBS Sans';
+				font-weight: 400;
+				/* stylelint-disable */
+				src: url('https://www-tc.pbs.org/pbsfonts/v1.2/PBSSans.woff2') format('woff2'),
+					url('https://www-tc.pbs.org/pbsfonts/v1.2/PBSSans.woff') format('woff');
+				/* stylelint-enable */
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: 'PBS Sans';
+				font-weight: 500;
+				/* stylelint-disable */
+				src: url('https://www-tc.pbs.org/pbsfonts/v1.2/PBSSans-Medium.woff2')
+						format('woff2'),
+					url('https://www-tc.pbs.org/pbsfonts/v1.2/PBSSans-Medium.woff')
+						format('woff');
+				/* stylelint-enable */
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: 'PBS Sans';
+				font-weight: 600;
+				/* stylelint-disable */
+				src: url('https://www-tc.pbs.org/pbsfonts/v1.2/PBSSans-Bold.woff2')
+						format('woff2'),
+					url('https://www-tc.pbs.org/pbsfonts/v1.2/PBSSans-Bold.woff') format('woff');
+				/* stylelint-enable */
+				font-display: swap;
+			}
+
+			:root {
+				--r-heading-font: "PBS Sans", "League Gothic", Impact, sans-serif;
+				--r-heading-text-transform: none;
+				--r-main-font: "PBS Sans", "League Gothic", Impact, sans-serif;
+				--r-heading-font-weight: 600;
+			}
 			.image-row {
 				display: flex;
 				flex-direction: row;
+				align-items: center;
 				max-width: 100vw;
+
 			}
 
 			.image-row img, .image-row--four img  {
@@ -40,10 +93,10 @@
 					<h1>The Value of the Web</h1>
 				</section>
 				<section>
-					<h2>How the web excels at furthering<br />the PBS mission</h2>
+					<h2>How the web excels <br>at furthering<br />the PBS mission</h2>
 				</section>
 				<section>
-					<h2>The Web is a Place of Equity</h2>
+					<h2>The Web is a Place of Equality</h2>
 				</section>
 				<section>
 					Our website is the most open and democratic way for the U.S. citizenry to reach our content.
@@ -107,7 +160,7 @@
 				</section>
 
 				<section>
-					<p>As a developer, <br />I have the most freedom of how I want to build things</p>
+					<p>As a developer, <br />I have the most freedom <br>in how I get to build things</p>
 					<img src="images/building-together.png" style="max-width: 33vw; max-height: 30vh;" alt="">
 
 					<aside class="notes">
@@ -115,11 +168,15 @@
 					</aside>
 				</section>
 				<section>
-					Some implementations may be more controlled, but they are changeable
-
-					<div class="fragment">
-						Example: moving from JW Player to Video.js
+					Some implementations may be <em>more</em> controlled,<br>but they <em>are</em> changeable
+					<div class="image-row image-row--two fragment">
+						<img src="images/JW_Player_logo.png" style="width: 45%;" alt="">
+						<p style="word-break: keep-all; inline-size: min-content; white-space: nowrap; margin: 0 20px;">-></p>
+						<img src="images/videojs.png" style="width: 45%;" alt="">
 					</div>
+					<aside class="notes">
+						Example: moving from JW Player to Video.js
+					</aside>
 				</section>
 
 				<section>
@@ -127,22 +184,29 @@
 				</section>
 
 				<section>
-					No other platform allows for such <em>progressive enhancement</em>
-
-					<aside>allowing all users a core experience, while more and more capable browsers get better and better experiences</aside>
-				</section>
-
-				<section>
-					The Power of a URL
-				</section>
-
-				<section>
-					The power of a single link to a single location cannot be overstated.
-					<aside>
-						Links are the lingua franca of the web
-						Findable, searchable, shareable
-						Ask an SEO expert how important links are
+					<p>No other platform allows for such <br><em>progressive enhancement</em></p>
+					<img src="images/sharing-ideas.png" style="max-width: 33vw; max-height: 30vh;" alt="">
+					<aside class="notes">
+						allowing all users a core experience, while more and more capable devices get better and better experiences
 					</aside>
+				</section>
+
+				<section>
+					<h2>The Power of a URL</h2>
+				</section>
+
+				<section>
+
+					<p>The power of a single link to a single location <br />cannot be overstated.</p>
+					<code class="fragment">&lt;a href=&quot;https://www.pbs.org/&quot;&gt;PBS&lt;/a&gt;</code>
+
+					<aside class="notes">
+						Links are what make the web the web. Links are the lingua franca of the web. They're findable, searchable, shareable. They can get you to where you want to go in the fastest way possible. No download steps required. Deep links sooooorta work like this too, but those must fit within confined structures. Just ask an SEO expert how important links are.
+					</aside>
+				</section>
+
+				<section>
+					<h1>Thank you!</h1>
 				</section>
 			</div>
 		</div>
