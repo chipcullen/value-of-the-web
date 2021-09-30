@@ -10,6 +10,22 @@
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/league.css">
 
+		<style>
+
+			.image-row {
+				display: flex;
+				flex-direction: row;
+				max-width: 100vw;
+			}
+
+			.image-row img, .image-row--four img  {
+				max-width: 25%;
+			}
+
+			.image-row--two img  {
+				max-width: 50%;
+			}
+		</style>
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
@@ -20,19 +36,31 @@
 					<h1>The Value of the Web</h1>
 				</section>
 				<section>
-					<h2>How the web excels at furthering the PBS mission</h2>
+					<h2>How the web excels at furthering<br />the PBS mission</h2>
 				</section>
 				<section>
 					<h2>The Web is a Place of Equity</h2>
 				</section>
 				<section>
 					Our website is the most open and democratic way for the U.S. citizenry to reach our content.
+
+					<div class="image-row image-row--four">
+						<img src="images/adults-library.jpg" alt="">
+						<img src="images/family-laptop.jpg" alt="">
+						<img src="images/kid-library.jpg" alt="">
+						<img src="images/cell-phone.jpg" alt="">
+					</div>
 				</section>
 
 				<section>
-					The web is accessible by default. Accessibility is designed into the HTML spec.
+					The web is accessible by default. <br />Accessibility is designed into the HTML spec.
 
-					<aside>
+					<div class="image-row image-row--two">
+						<img src="images/braile-keyboard.jpg" alt="">
+						<img src="images/screen-reader-user.png" alt="">
+					</div>
+
+					<aside class="notes">
 						It’s up to us to make sure we don’t mess it up.
 					</aside>
 				</section>
